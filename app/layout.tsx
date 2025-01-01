@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { FooterNew } from "@/components/layout/sections/footer_new";
-import Head from "next/head";
+import { Toaster } from "@/components/ui/toaster";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -54,6 +54,7 @@ export default function RootLayout({
           {/* </TracingBeam> */}
           <FooterSection />
           {/* <FooterNew /> */}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

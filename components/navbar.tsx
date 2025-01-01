@@ -88,11 +88,7 @@ export function Navbar() {
       <div className="container flex h-10 w-full items-center">
         <div className="mr-4 w-full flex justify-between items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            {/* <Icons.logo className="h-6 w-6" /> */}
             <Image src={LOGO} alt="LOGO" className="h-9 w-auto" />
-            {/* <span className="hidden font-bold sm:inline-block">
-              Acme Inc
-            </span> */}
           </Link>
           <div className="hidden md:flex">
             <NavigationMenu>
@@ -178,15 +174,6 @@ export function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/* <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Documentation
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem> */}
                 <NavigationMenuItem>
                   <Link href="/contact-us" legacyBehavior passHref>
                     <NavigationMenuLink
@@ -237,10 +224,10 @@ function MobileNav() {
       <Link href="/" className="font-medium text-xl">
         Home
       </Link>
-      <Link href="/aboutus" className="font-medium text-xl">
+      <Link href="/about-us" className="font-medium text-xl">
         About Us
       </Link>
-      <Link href="/contactus" className="font-medium text-xl">
+      <Link href="/contact-us" className="font-medium text-xl">
         Contact Us
       </Link>
       <div className="flex flex-col space-y-2">

@@ -28,8 +28,9 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
-import { Loader2 } from 'lucide-react'
+import { Loader2 } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const phoneRegex = new RegExp(
   /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
@@ -38,21 +39,22 @@ const phoneRegex = new RegExp(
 const formSchema = z.object({
   fullName: z.string().min(2).max(255),
   email: z.string().email(),
-  phoneNO: z.string().regex(phoneRegex,"invalid Number").min(10),
+  phoneNO: z.string().regex(phoneRegex, "invalid Number").min(10),
   subject: z.string().min(2).max(255),
   message: z.string(),
 });
 
 export const ContactSection = () => {
-
   const [loading, setLoading] = useState(false);
+
+  const {toast} = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
       email: "",
-      phoneNO: '',
+      phoneNO: "",
       subject: "Web Development",
       message: "",
     },
@@ -61,28 +63,30 @@ export const ContactSection = () => {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const { fullName, email, phoneNO, subject, message } = values;
     try {
-      setLoading(true)
-      const response = await fetch('/api/send', {
-        method: 'POST',
+      setLoading(true);
+      const response = await fetch("/api/send", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({fullName, email, phoneNO, subject, message})
-      })
+        body: JSON.stringify({ fullName, email, phoneNO, subject, message }),
+      });
 
-      setLoading(false)
-      values.fullName = '';
-      values.email = '';
-      values.phoneNO = '';
-      values.subject = '';
-      values.message = '';
-      
+      setLoading(false);
+      if (response.status === 200)
+        toast({ description: "Email sent successfully" });
+      else
+        toast({
+          variant: "destructive",
+          description: "Error in sending email",
+        });
     } catch (error) {
-      setLoading(false)
-      console.error(error);
+      setLoading(false);
+      toast({
+        variant: "destructive",
+        description: "Error in sending email",
+      });
     }
-
-    
   }
 
   return (
@@ -94,7 +98,9 @@ export const ContactSection = () => {
               Contact Us
             </h2>
 
-            <h2 className="text-xl lg:text-2xl font-bold">Unlock the power of digital marketing</h2>
+            <h2 className="text-xl lg:text-2xl font-bold">
+              Unlock the power of digital marketing
+            </h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
@@ -104,18 +110,16 @@ export const ContactSection = () => {
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex items-center gap-4 mb-3">
-                <Phone className="p-2 bg-primary/20 rounded-full ring-8 ring-primary/10 text-bold h-8 w-8"/>
+                <Phone className="p-2 bg-primary/20 rounded-full ring-8 ring-primary/10 text-bold h-8 w-8" />
                 <div className="font-medium text-xl text-primary">Call us</div>
               </div>
 
-              <div>
-                +91 6297654712
-              </div>
+              <div>+91 6297654712</div>
             </div>
 
             <div>
               <div className="flex items-center gap-4 mb-3">
-                <Mail className="p-2 bg-primary/20 rounded-full ring-8 ring-primary/10 text-bold h-8 w-8"/>
+                <Mail className="p-2 bg-primary/20 rounded-full ring-8 ring-primary/10 text-bold h-8 w-8" />
                 <div className="font-medium text-xl text-primary">Mail US</div>
               </div>
 
@@ -124,8 +128,10 @@ export const ContactSection = () => {
 
             <div>
               <div className="flex items-center gap-4 mb-3">
-                <Clock className="p-2 bg-primary/20 rounded-full ring-8 ring-primary/10 text-bold h-8 w-8"/>
-                <div className="font-medium text-xl text-primary">Working Hours</div>
+                <Clock className="p-2 bg-primary/20 rounded-full ring-8 ring-primary/10 text-bold h-8 w-8" />
+                <div className="font-medium text-xl text-primary">
+                  Working Hours
+                </div>
               </div>
 
               <div>
@@ -259,9 +265,7 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                {
-                  loading ? <SendBtnLoading /> : <SendBtn />
-                }
+                {loading ? <SendBtnLoading /> : <SendBtn />}
               </form>
             </Form>
           </CardContent>
@@ -273,13 +277,9 @@ export const ContactSection = () => {
   );
 };
 
-
-
 const SendBtn = () => {
-  return (
-    <Button className="mt-4">Send message</Button>
-  )
-}
+  return <Button className="mt-4">Send message</Button>;
+};
 
 const SendBtnLoading = () => {
   return (
@@ -287,5 +287,5 @@ const SendBtnLoading = () => {
       <Loader2 className="animate-spin" />
       Please wait
     </Button>
-  )
-}
+  );
+};

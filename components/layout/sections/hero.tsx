@@ -15,11 +15,11 @@ export const HeroSection = () => {
   // const { theme } = useTheme();
   return (
     <div className="container max-w-[90%] px-0 lg:px-20 flex flex-row md:flex-row gap-20 my-[100px] md:my-[160px]">
-      <div className="w-full lg:max-w-[575px] text-center md:text-start z-10">
+      <div className="w-full lg:max-w-full text-center md:text-start z-10">
         <span className="px-3 py-1.5 rounded-full bg-card text-sm font-medium">
         🌟 Certified Digital Marketing Professional
         </span>
-        <h4 className="mb-6 text-4xl lg:text-[48px] mt-[30px] font-bold">
+        <h4 className="mb-6 text-4xl lg:text-7xl mt-[30px] font-bold">
           Hey <span className="text-primary">Start-Up Heroes</span>
         </h4>
         <p className="text-[1rem] lg:text-lg font-medium text-secondary-foreground">
@@ -29,7 +29,7 @@ export const HeroSection = () => {
         <p className="text-[1rem] lg:text-lg font-medium text-secondary-foreground mb-12">
           Get an unique strategy designed only for you!
         </p>
-        <div className="max-w-screen-md mx-auto space-y-8 md:space-y-8 md:space-x-4 flex justify-center items-center lg:justify-start">
+        <div className="max-w-screen-md space-y-8 md:space-y-8 md:space-x-4 flex justify-center items-center lg:justify-start">
           <Link href='/about-us'>
             <HoverBorderGradient
               containerClassName="rounded-full"
@@ -44,14 +44,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="hidden md:flex justify-center md:justify-end z-10">        
-        <Image 
-        src={banner}
-        width={536}
-        height={350}
-        alt="Hero Image"
-        />
-      </div>
+      
       
       <BackgroundBeams />
     </div>

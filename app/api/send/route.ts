@@ -19,7 +19,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
   const body: AdminEmailTempProps = await req.json();
   try {
     const { data, error } = await resend.emails.send({
-      from: `MyPromo <info@mypromo.in>`,
+      from: `MyPromo <noreply@mypromo.in>`,
       to: "subhankar13022000s@gmail.com",
       subject: "New Message from Website",
       react: AdminEmailTemp({ ...body }),
