@@ -32,64 +32,64 @@ export function ServiceSection() {
       description:
         "It's as easy as using an Apple, and as expensive as buying one.",
       icon: <IconSeo />,
-      link: "/services/someLink",
+      link: "/services/seo",
     },
     {
       title: "Social Media Marketing",
       description:
         "Our prices are best in the market. No cap, no lock, no credit card required.",
       icon: <IconCurrencyDollar />,
-      link: "/services/someLink",
+      link: "/services/smmarketing",
     },
     {
       title: "Graphic Design",
       description: "We just cannot be taken down by anyone.",
       icon: <IconBrandAdobePhotoshop />,
-      link: "/services/someLink",
+      link: "/services/graphicdesign",
     },
     {
       title: "Lead Generation",
       description: "You can simply share passwords instead of buying new seats",
       icon: <IconRouteAltLeft />,
-      link: "/services/someLink",
+      link: "/services/leadgen",
     },
     {
       title: "Marketing Automation",
       description:
         "We are available a 100% of the time. Atleast our AI Agents are.",
       icon: <IconAutomation />,
-      link: "/services/someLink",
+      link: "/services/marketingautomation",
     },
     {
       title: "AI Enhanced Digital Optimization",
       description:
         "If you donot like EveryAI, we will convince you to like us.",
       icon: <IconAdjustmentsBolt />,
-      link: "/services/someLink",
+      link: "/services/aioptimization",
     },
     {
       title: "Content Writing",
       description: "I just ran out of copy ideas. Accept my sincere apologies",
       icon: <IconEdit />,
-      link: "/services/someLink",
+      link: "/services/contentwriting",
     },
     {
       title: "Content Marketing",
       description: "I just ran out of copy ideas. Accept my sincere apologies",
       icon: <IconActivity />,
-      link: "/services/someLink",
+      link: "/services/contentmarketing",
     },
     {
       title: "Collab Membership",
       description: "I just ran out of copy ideas. Accept my sincere apologies",
       icon: <IconHeartHandshake />,
-      link: "/services/someLink",
+      link: "/services/collab",
     },
     {
       title: "Salesforce",
       description: "I just ran out of copy ideas. Accept my sincere apologies",
       icon: <IconHeart />,
-      link: "/services/someLink",
+      link: "/services/salesforce",
     },
   ];
   return (
@@ -138,6 +138,7 @@ const Feature = ({
   return (
     <Link
       href={link}
+      prefetch = {true}
       className={cn(
         "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
         (index === 0 || index === 4 || index === 8) &&

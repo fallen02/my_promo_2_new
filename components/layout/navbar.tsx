@@ -171,7 +171,7 @@ export const Navbar = () => {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-
+{/* 
       <div className="hidden lg:flex">
         <ToggleTheme />
 
@@ -184,7 +184,7 @@ export const Navbar = () => {
             <Github className="size-5" />
           </Link>
         </Button>
-      </div>
+      </div> */}
     </header>
   );
 };
