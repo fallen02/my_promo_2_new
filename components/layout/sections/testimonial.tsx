@@ -27,16 +27,16 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    name: "Debasish Das",
+    userName: "Founder, Cluster Engineers",
     comment:
       "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    name: "Rudra Narayan Mishra",
+    userName: "Director, Assigna Solution",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
     rating: 4.8,
@@ -44,32 +44,54 @@ const reviewList: ReviewProps[] = [
 
   {
     image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    name: "Rahul Bharat",
+    userName: "Founder, Geniuslane",
     comment:
       "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rating: 4.9,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    name: "Deepak Dodani",
+    userName: "Founder, Meat99",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    name: "Sk Samim",
+    userName: "Franchise Owner, Jio Mart Digital",
     comment:
       "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    name: "Sk Rejabul",
+    userName: "Franchise Owner, Dr Fixit",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    rating: 4.9,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Mowlana",
+    userName: "Director, AG Constructions",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    rating: 4.9,
+  },{
+    image: "https://github.com/shadcn.png",
+    name: "Puneet Kochar",
+    userName: "Puneet Kochar",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    rating: 4.9,
+  },{
+    image: "https://github.com/shadcn.png",
+    name: "Sanjeev Sardana",
+    userName: "Founder, Shreejee Traveling",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.9,

@@ -23,71 +23,71 @@ export function ServiceSection() {
     {
       title: "Website Development",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Build a stunning website that convinces your customers to make purchases.",
       icon: <IconDeviceImacCode />,
       link: "/services/webdev",
     },
     {
-      title: "Search Engine Optimization",
+      title: "SEO",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Get the no.1 place among your competitors in the google search.",
       icon: <IconSeo />,
       link: "/services/seo",
     },
     {
       title: "Social Media Marketing",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Drive engagement & sales with the ultimate social media marketing.",
       icon: <IconCurrencyDollar />,
       link: "/services/smmarketing",
     },
     {
       title: "Graphic Design",
-      description: "We just cannot be taken down by anyone.",
+      description: "Boost your brand with an eye-catching logo, banner, poster & Infographics.",
       icon: <IconBrandAdobePhotoshop />,
       link: "/services/graphicdesign",
     },
     {
       title: "Lead Generation",
-      description: "You can simply share passwords instead of buying new seats",
+      description: "Boost sales effortlessly through an effective lead generation.",
       icon: <IconRouteAltLeft />,
       link: "/services/leadgen",
     },
     {
       title: "Marketing Automation",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Smarter marketing & better results with the marketing automations.",
       icon: <IconAutomation />,
       link: "/services/marketingautomation",
     },
     {
       title: "AI Enhanced Digital Optimization",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Let’s join our AI-powered growth & optimization and Supercharge Your Digital Presence.",
       icon: <IconAdjustmentsBolt />,
       link: "/services/aioptimization",
     },
     {
       title: "Content Writing",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      description: "IEngaging & SEO-friendly content writing service is one tap away.",
       icon: <IconEdit />,
       link: "/services/contentwriting",
     },
     {
       title: "Content Marketing",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      description: "Attract, inform, and inspire your customers to drive more sales.",
       icon: <IconActivity />,
       link: "/services/contentmarketing",
     },
     {
       title: "Collab Membership",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      description: "Join Us and collaborate with Facebook groups and Influencers to elevate your branding journey.",
       icon: <IconHeartHandshake />,
       link: "/services/collab",
     },
     {
       title: "Salesforce",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      description: "The ultimate CRM solution is here.",
       icon: <IconHeart />,
       link: "/services/salesforce",
     },
@@ -152,10 +152,11 @@ const Feature = ({
       {index >= 8 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
       )}
-      <div className="mb-4 ml-4 relative z-10 p-2 text-primary  bg-primary/10 w-fit rounded-full">
+      
+      <div className="text-lg font-bold mb-2 relative z-10 px-10">
+      <div className="mb-4 relative z-10 p-2 text-primary  bg-primary/10 w-fit rounded-full">
         {icon}
       </div>
-      <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-primary transition-all duration-200 origin-center" />
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-primary/80 group-hover/feature:text-primary">
           {title}

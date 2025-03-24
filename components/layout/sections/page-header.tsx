@@ -13,13 +13,6 @@ export default function PageHeader({
 }) {
   return (
     <div className="relative isolate overflow-hidden  py-24 sm:py-40  dark:bg-grid-white/[0.08] bg-grid-black/[0.2] ">
-      {/* <Image
-        alt=""
-        src={imgsrc}
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-        height={1500}
-        width={2830}
-      /> */}
       <div aria-hidden="true"  className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] z-0"></div>
       <div
         aria-hidden="true"

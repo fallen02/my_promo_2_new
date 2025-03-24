@@ -4,7 +4,6 @@ import { PageFooter } from "@/components/layout/sections/page_footer";
 import { TextShimmer } from "@/components/ui/text-shimmer";
 
 import { Timeline } from "@/components/ui/timeline-effect";
-import Image from "next/image";
 
 const CTADATA = {
   title: "Get Started",
@@ -26,10 +25,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We craft bespoke website designs that reflect your brand’s identity
-            and resonate with your target audience. Our designs are
-            user-friendly, visually appealing, and tailored to meet your
-            specific business needs.
+          We craft bespoke website designs that reflect your brand’s identity and resonate with your target audience. Our designs are user-friendly, visually appealing, and tailored to meet your specific business needs.
           </p>
         </div>
       ),
@@ -39,10 +35,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            In today’s mobile-driven world, having a responsive website is
-            crucial. We ensure that your site performs flawlessly across all
-            devices and screen sizes, providing a seamless experience for users
-            on desktop, tablet, and mobile.
+          In today’s mobile-driven world, having a responsive website is crucial. We ensure that your site performs flawlessly across all devices and screen sizes, providing a seamless experience for users on desktop, tablet, and mobile.
           </p>
         </div>
       ),
@@ -52,10 +45,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            For businesses looking to sell online, we offer robust e-commerce
-            development services. From product listings and shopping carts to
-            secure payment gateways and inventory management, we build platforms
-            that enhance the shopping experience and drive sales.
+          For businesses looking to sell online, we offer robust e-commerce development services. From product listings and shopping carts to secure payment gateways and inventory management, we build platforms that enhance the shopping experience and drive sales.
           </p>
         </div>
       ),
@@ -65,10 +55,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We specialize in popular CMS platforms like WordPress, Joomla, and
-            Drupal, providing you with the tools to easily manage and update
-            your website content. Our CMS solutions are intuitive, scalable, and
-            tailored to your needs.
+          We specialize in popular CMS platforms like WordPress, Joomla, and Drupal, providing you with the tools to easily manage and update your website content. Our CMS solutions are intuitive, scalable, and tailored to your needs.
           </p>
         </div>
       ),
@@ -78,9 +65,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            A well-designed website is only effective if it’s visible. Our
-            development process includes on-page SEO optimization to improve
-            your site’s search engine rankings and drive organic traffic.
+          A well-designed website is only effective if it’s visible. Our development process includes on-page SEO optimization to improve your site’s search engine rankings and drive organic traffic.
           </p>
         </div>
       ),
@@ -90,10 +75,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            Keeping your website updated and running smoothly is essential. We
-            offer ongoing maintenance and support services to ensure that your
-            site remains secure, functional, and up-to-date with the latest
-            technology.
+          Keeping your website updated and running smoothly is essential. We offer ongoing maintenance and support services to ensure that your site remains secure, functional, and up-to-date with the latest technology.
           </p>
         </div>
       ),
@@ -103,9 +85,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We focus on optimizing your website’s performance, including fast
-            loading times, smooth navigation, and efficient code. Our goal is to
-            enhance user experience and reduce bounce rates.
+          We focus on optimizing your website’s performance, including fast loading times, smooth navigation, and efficient code. Our goal is to enhance user experience and reduce bounce rates.
           </p>
         </div>
       ),
@@ -115,9 +95,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            Whether you need to integrate with third-party tools, CRM systems,
-            or marketing platforms, we ensure seamless connectivity to
-            streamline your operations and enhance functionality.
+          Whether you need to integrate with third-party tools, CRM systems, or marketing platforms, we ensure seamless connectivity to streamline your operations and enhance functionality.
           </p>
         </div>
       ),
@@ -127,9 +105,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            Our team emphasizes user experience (UX) and user interface (UI)
-            design to ensure that your website is not only visually engaging but
-            also easy to navigate and interact with.
+          Our team emphasizes user experience (UX) and user interface (UI) design to ensure that your website is not only visually engaging but also easy to navigate and interact with.
           </p>
         </div>
       ),
@@ -139,9 +115,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We implement analytics tools to track your website’s performance,
-            gather insights, and provide regular reports. This data helps in
-            making informed decisions and optimizing your online strategy.
+          We implement analytics tools to track your website’s performance, gather insights, and provide regular reports. This data helps in making informed decisions and optimizing your online strategy.
           </p>
         </div>
       ),

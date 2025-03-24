@@ -195,19 +195,5 @@ const items = [
 
       icon: <IconTableColumn className="h-10 w-10  bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />,
     },
-    // {
-    //   title: "Transparent Reporting",
-    //   description: "Regular updates on your social media performance with clear and actionable insights.",
-    //   header: (
-    //     <Image
-    //       src="/demo-img.jpg"
-    //       alt="The Dawn of Innovation"
-    //       width={400}
-    //       height={200}
-    //       layout="responsive"
-    //     />
-    //   ),
-    //   icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-    // },
 
   ];

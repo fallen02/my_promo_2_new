@@ -2,9 +2,7 @@ import { CTASection } from "@/components/layout/sections/cta";
 import PageHeader from "@/components/layout/sections/page-header";
 import { PageFooter } from "@/components/layout/sections/page_footer";
 import { TextShimmer } from "@/components/ui/text-shimmer";
-
 import { Timeline } from "@/components/ui/timeline-effect";
-import Image from "next/image";
 
 export default function Webdev() {
   const PageData = {
@@ -19,10 +17,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We conduct thorough keyword research to identify the most relevant
-            and high-performing keywords for your business. This ensures that
-            your content targets the right search terms and reaches your
-            intended audience.
+          We conduct thorough keyword research to identify the most relevant and high-performing keywords for your business. This ensures that your content targets the right search terms and reaches your intended audience.
           </p>
         </div>
       ),
@@ -32,10 +27,8 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            Our on-page optimization focuses on enhancing individual web pages
-            to rank higher and attract relevant traffic. This includes
-            optimizing meta tags, headers, images, and content for targeted
-            keywords.
+          Our on-page optimization focuses on enhancing individual web pages to rank higher and attract relevant traffic. This includes optimizing meta tags, headers, images, and content for targeted keywords.
+
           </p>
         </div>
       ),
@@ -45,10 +38,8 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We address the technical aspects of your website to improve its
-            performance and search engine crawlability. This involves optimizing
-            site speed, mobile-friendliness, URL structure, and fixing technical
-            issues that may affect rankings.
+          We address the technical aspects of your website to improve its performance and search engine crawlability. This involves optimizing site speed, mobile-friendliness, URL structure, and fixing technical issues that may affect rankings.
+
           </p>
         </div>
       ),
@@ -58,9 +49,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            Quality content is key to SEO success. We create and optimize
-            engaging, valuable content that aligns with your target audience’s
-            needs and interests while incorporating relevant keywords.
+          Quality content is key to SEO success. We create and optimize engaging, valuable content that aligns with your target audience’s needs and interests while incorporating relevant keywords.
           </p>
         </div>
       ),
@@ -70,9 +59,8 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            Our link building strategies focus on acquiring high-quality
-            backlinks from reputable websites. This helps to enhance your site’s
-            authority and improve its ranking potential.
+          Our link building strategies focus on acquiring high-quality backlinks from reputable websites. This helps to enhance your site’s authority and improve its ranking potential.
+
           </p>
         </div>
       ),
@@ -82,11 +70,8 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            For businesses targeting local customers, we optimize your online
-            presence to improve visibility in local search results. This
-            includes optimizing your Google My Business profile, local
-            citations, and ensuring consistent NAP (Name, Address, Phone Number)
-            information.
+          For businesses targeting local customers, we optimize your online presence to improve visibility in local search results. This includes optimizing your Google My Business profile, local citations, and ensuring consistent NAP (Name, Address, Phone Number) information.
+
           </p>
         </div>
       ),
@@ -96,9 +81,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We perform comprehensive SEO audits to assess your website’s current
-            performance and identify areas for improvement. Our audits cover
-            technical SEO, on-page factors, and backlink profiles.
+          We perform comprehensive SEO audits to assess your website’s current performance and identify areas for improvement. Our audits cover technical SEO, on-page factors, and backlink profiles.
           </p>
         </div>
       ),
@@ -108,9 +91,8 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We analyze your competitors’ SEO strategies to identify
-            opportunities and develop tactics to outperform them. This helps you
-            stay ahead in your industry and capture a larger market share.
+          We analyze your competitors’ SEO strategies to identify opportunities and develop tactics to outperform them. This helps you stay ahead in your industry and capture a larger market share.
+
           </p>
         </div>
       ),
@@ -120,10 +102,8 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            We track and measure the performance of your SEO campaigns using
-            advanced analytics tools. Our detailed reports provide insights into
-            keyword rankings, traffic trends, and ROI, enabling data-driven
-            decisions.
+          We track and measure the performance of your SEO campaigns using advanced analytics tools. Our detailed reports provide insights into keyword rankings, traffic trends, and ROI, enabling data-driven decisions.
+
           </p>
         </div>
       ),
@@ -133,10 +113,7 @@ export default function Webdev() {
       content: (
         <div>
           <p className="text-xl lg:text-2xl text-muted-foreground">
-            SEO is an ongoing process. We continually monitor your website’s
-            performance, stay updated with search engine algorithm changes, and
-            make necessary adjustments to keep your SEO strategy effective and
-            competitive.
+          SEO is an ongoing process. We continually monitor your website’s performance, stay updated with search engine algorithm changes, and make necessary adjustments to keep your SEO strategy effective and competitive.
           </p>
         </div>
       ),

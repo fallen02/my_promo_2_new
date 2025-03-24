@@ -113,14 +113,6 @@ export default function Home() {
       <section className="pt-15 lg:pt-28 mx-auto max-w-[90%] flex justify-center items-center">
         
         <div className="flex flex-col items-center justify-center">
-        {/* <Image 
-          src={quoteImage}
-          alt="Quote"
-          height={500}
-          width={500}
-          className="h-full w-auto max-w-[500px]"
-          /> */}
-
           <p className="text-3xl lg:text-5xl w-full font-satisfy font-bold mb-6">“The best marketing doesn’t feel like marketing.” </p>
           <p className="text-end w-full text-[15px] lg:text-xl font-semibold text-primary/70" >-Tom Fishburne, founder and CEO, Marketoonist</p>
 

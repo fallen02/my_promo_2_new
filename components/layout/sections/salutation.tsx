@@ -21,15 +21,13 @@ export const Salutation = () => {
         <h4 className="text-3xl lg:text-4xl font-bold mt-5">
           Welcome to MyPromo
         </h4>
-        <h4 className="text-xl lg:text-2xl font-bold mt-2">
-          To Get You High!
-        </h4>
+        <h4 className="text-xl lg:text-2xl font-bold mt-2">To Get You High!</h4>
         <p className="text-sm lg:text-lg text-muted-foreground mt-5">
           We turn your digital dreams into groovy realities! Are you ready to
           jazz up your brand and rock the internet? You&apos;ve landed at the right
           place. We blend creativity, strategy, team effort and a whole lot of
-          positivity to make your brand shine brighter like STARS!
-          At MyPromo your brand is :
+          positivity to make your brand shine brighter like STARS! At MyPromo
+          your brand is :
         </p>
 
         <div className="w-full my-10 md:max-w-[100%] flex flex-col gap-8">
@@ -74,7 +72,6 @@ export const Salutation = () => {
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 className="lucide lucide-cpu h-6 w-6"
-  
               >
                 <path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13" />
                 <path d="m8 6 2-2" />
@@ -95,12 +92,10 @@ export const Salutation = () => {
 
       <div className="flex justify-center items-center">
         {/* <Image width={650} height={300} src={image} alt="shadcnkit" /> */}
-        <Player 
-          style={{ width: "100%", }}
+        <Player
+          style={{ width: "100%" }}
           src="/video.mp4"
           className="rounded-xl"
-
-
         />
       </div>
     </div>

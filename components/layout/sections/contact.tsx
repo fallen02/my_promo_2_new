@@ -47,7 +47,7 @@ const formSchema = z.object({
 export const ContactSection = () => {
   const [loading, setLoading] = useState(false);
 
-  const {toast} = useToast();
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -103,8 +103,8 @@ export const ContactSection = () => {
             </h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            At MyPromo you confirm your potential to make the best customer base
+            through digital marketing.
           </p>
 
           <div className="flex flex-col gap-4">
@@ -191,7 +191,7 @@ export const ContactSection = () => {
                     name="phoneNO"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Pnone No</FormLabel>
+                        <FormLabel>Phone No</FormLabel>
                         <FormControl>
                           <Input
                             type="tel"
@@ -225,16 +225,19 @@ export const ContactSection = () => {
                             <SelectItem value="Web Development">
                               Web Development
                             </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
+                            <SelectItem value="Soical Media Marketing">
+                              Soical Media Marketing
                             </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
+                            <SelectItem value="Search Engine Optimization">
+                              Search Engine Optimization
                             </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
+                            <SelectItem value="Lead Generation">
+                              Lead Generation
                             </SelectItem>
+                            <SelectItem value="Graphics or Video">
+                              Graphics or Video
+                            </SelectItem>
+                            <SelectItem value="Others">Others</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />

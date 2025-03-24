@@ -16,18 +16,18 @@ const benefitList: BenefitsProps[] = [
   },
   {
     icon: "Activity",
-    title: "Transformation",
-    description: "We transform numbers into magic.",
+    title: "Well-planned Execution",
+    description: "We transform ideas into realities through well planned execution.",
   },
   {
     icon: "Activity",
-    title: "Marketing Ideas",
-    description: "Always ahead of the curve.",
+    title: "Difference from Others",
+    description: "We always stay ahead of the curve.",
   },
   {
     icon: "Sparkle",
-    title: "We are fans",
-    description: "We’re not just your partners, we're your biggest fans!",
+    title: "Our Source or Strength",
+    description: "When work, we're not just your marketing partners, we're your biggest fans!",
   },
 ];
 

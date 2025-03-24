@@ -8,6 +8,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { FooterNew } from "@/components/layout/sections/footer_new";
 import { Toaster } from "@/components/ui/toaster";
+import { FloatingButton } from "@/components/FloatingButton";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ export const satisfy = Satisfy({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],
-  variable: '--font-satisty'
+  variable: "--font-satisty",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   description: "To get you high on the digital world!",
   icons: {
     icon: "/favicon.png",
-  }
+  },
 };
 
 export default function RootLayout({
@@ -37,9 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      
       <body
-        className={cn("min-h-screen bg-black antialiased", poppins.className, satisfy.variable)}
+        className={cn(
+          "min-h-screen bg-black antialiased",
+          poppins.className,
+          satisfy.variable
+        )}
       >
         <ThemeProvider
           attribute="class"
@@ -48,13 +52,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          {/* <TracingBeam className="px-0">  */}
           {children}
-
-          {/* </TracingBeam> */}
           <FooterSection />
-          {/* <FooterNew /> */}
           <Toaster />
+          <FloatingButton />
         </ThemeProvider>
       </body>
     </html>

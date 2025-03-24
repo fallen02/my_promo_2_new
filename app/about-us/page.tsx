@@ -4,40 +4,25 @@ import { CTASection } from "@/components/layout/sections/cta";
 import Image from "next/image";
 
 const stats = [
-  { label: "Transactions every 24 hours", value: "44 million" },
-  { label: "Assets under holding", value: "$119 trillion" },
-  { label: "New users annually", value: "46,000" },
+  { label: "Of Experience", value: "5+ years" },
+  { label: "Projects Completed", value: "100+" },
+  { label: "Satisfied Clients", value: "42+" },
 ];
 const values = [
   {
-    name: "Be world-class",
+    name: "Our Principle",
     description:
-      "Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.",
+      "In the world of competition and capitalism we hold the hands of the start-up owners & respect what they do; we make plans for their success.",
   },
   {
-    name: "Share everything you know",
+    name: "Work Process",
     description:
-      "Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.",
+      "Marketing & technology are the ultimate process to grow a business. And we can reveal the best of it to you.",
   },
   {
-    name: "Always learning",
+    name: "Delightful Deliveries",
     description:
-      "Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.",
-  },
-  {
-    name: "Be supportive",
-    description:
-      "Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.",
-  },
-  {
-    name: "Take responsibility",
-    description:
-      "Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.",
-  },
-  {
-    name: "Enjoy downtime",
-    description:
-      "Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.",
+      "It's a proud moment for us when a client get so delighted with our work deliveries. Because we always ensure 360° client satisfaction.",
   },
 ];
 
@@ -180,15 +165,15 @@ export default function AboutUs() {
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p className="text-xl leading-8 text-muted-foreground">
-                We are a team of passionate marketers, strategists, and
-                creatives dedicated to helping businesses thrive in the digital
-                age. Our expertise spans a full spectrum of digital marketing
-                services, including SEO, social media, content marketing, and
-                web design. From data-driven insights and AI-powered campaigns
-                to engaging interactive content and cutting-edge SEO techniques,
-                we tailor our approach to meet your unique needs. Partner with
-                us to elevate your brand, connect with your audience, and stay
-                ahead in the digital landscape.
+                We are a team of passionate marketers, strategists, and IT
+                professionals dedicated to helping businesses thrive in the
+                digital age. We have 5+ years of expertise that spans a full
+                spectrum of digital marketing services, including SEO, social
+                media, content marketing, and web design. From data-driven
+                insights and AI-powered campaigns to engaging interactive
+                content we tailor our approach to meet your unique needs.
+                Partner with us to elevate your brand, connect with your
+                audience, and stay ahead in the digital landscape.
               </p>
             </div>
             <div className="lg:flex lg:flex-auto lg:justify-center">
@@ -230,13 +215,13 @@ export default function AboutUs() {
             What We Do
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            At MyPromo,our mission is to revolutionize digital marketing by
-            delivering innovative, data-driven strategies that empower
-            businesses to achieve their goals. We are committed to creating
-            customized solutions that enhance brand visibility, engage target
+            At MyPromo, our mission is to revolutionize digital marketing by
+            delivering innovative strategies that empower businesses to achieve
+            their goals. We are committed to creating customized solutions for
+            each business that enhance brand visibility, engage target
             audiences, and drive measurable results. With a focus on creativity,
             technology, and client success,we’re devoted to challenging existing
-            limitations and evoking considerable improvements globally.
+            limitations and evoking considerable improvements.
           </p>
         </div>
         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">

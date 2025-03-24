@@ -11,23 +11,22 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    title: "Our Principle",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam.",
+      "In the world of competition and capitalism we hold hands of the start-up owners & respect what they do; we make plan for their success.",
   },
   {
     icon: "BadgeCheck",
-    title: "Social Proof",
+    title: "Work Process",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Marketing & technology are the ultimate process to grow a business. And we can reveal the best of it to you.",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
+    title: "Delightful Deliveries",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "It's a proud moment for us when a client get so delighted with our work deliveries. Because we always ensure 360° client satisfaction.",
   },
-  
 ];
 
 export const FeaturesSection = () => {
@@ -35,7 +34,7 @@ export const FeaturesSection = () => {
     <section id="features" className="container py-24 sm:py-32">
       <div className="flex justify-center items-center">
         <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-sm font-medium text-primary tracking-wider mb-5">
-          Why Us? 
+          Why Us?
         </h2>
       </div>
 
@@ -44,9 +43,8 @@ export const FeaturesSection = () => {
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Let’s learn about our principle, work process & delightful deliveries
+        that always support us to keep our client at the top.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
