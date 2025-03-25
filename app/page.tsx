@@ -11,6 +11,7 @@ import { Marquee } from "@/components/special/marque";
 import Image from "next/image";
 
 import More from "@/app/assets/more.svg";
+import Link from "next/link";
 
 interface ServiceProps {
   name: string;
@@ -114,7 +115,9 @@ export default function Home() {
           <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-lg font-medium text-primary tracking-wider mb-5">
             What More..
           </h2>
+          <Link href={'https://forms.gle/tDaU2cwSwQ2JXzSD7'} target="_blank">
           <Image alt="Whats More" src={More} />
+          </Link>
         </div>
       </section>
 

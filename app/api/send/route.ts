@@ -20,7 +20,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
   try {
     const { data, error } = await resend.emails.send({
       from: `MyPromo <noreply@mypromo.in>`,
-      to: "subhankar13022000s@gmail.com",
+      to: "mypromofficial@gmail.com",
       subject: "New Message from Website",
       react: AdminEmailTemp({ ...body }),
     });
