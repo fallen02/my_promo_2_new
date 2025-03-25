@@ -93,50 +93,7 @@ export function Navbar() {
           <div className="hidden md:flex">
             <NavigationMenu>
               <NavigationMenuList>
-                {/* <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent hover:text-primary">
-                    Home
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                      <li className="row-span-3">
-                        <NavigationMenuLink asChild>
-                          <a
-                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                            href="/"
-                          >
-                            <Image
-                              src={LOGO}
-                              alt="LOGO"
-                              className="h-10 w-auto"
-                            />
-                            <div className="mb-2 mt-4 text-lg font-medium">
-                              MyPromo
-                            </div>
-                            <p className="text-sm leading-tight text-muted-foreground">
-                              We turn your digital dreams into groovy realities!
-                              Are you ready to jazz up your brand and rock the
-                              internet?
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      <ListItem href="/#" title="About Us">
-                        Re-usable components built using Radix UI and Tailwind
-                        CSS.
-                      </ListItem>
-                      <ListItem href="/docs/installation" title="Installation">
-                        How to install dependencies and structure your app.
-                      </ListItem>
-                      <ListItem
-                        href="/docs/primitives/typography"
-                        title="Typography"
-                      >
-                        Styles for headings, paragraphs, lists...etc
-                      </ListItem>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem> */}
+               
                 <NavigationMenuItem>
                   <Link href="/" legacyBehavior passHref>
                     <NavigationMenuLink
@@ -190,7 +147,7 @@ export function Navbar() {
             <a href="/contact-us" className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#000000_0%,#ffa366_50%,#fff0e6_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-primary px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Contact Us
+                Our Portfolio
               </span>
             </a>
           </div>

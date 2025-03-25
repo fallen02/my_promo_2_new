@@ -111,7 +111,9 @@ export default function Home() {
       <ServiceSection />
       <section className="pt-15 lg:pt-28 mx-auto max-w-[90%] flex justify-center items-center">
         <div className="flex flex-col justify-center items-center gap-6">
-        <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-sm font-medium text-primary tracking-wider mb-5">Whats More</h2>
+          <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-lg font-medium text-primary tracking-wider mb-5">
+            What More..
+          </h2>
           <Image alt="Whats More" src={More} />
         </div>
       </section>

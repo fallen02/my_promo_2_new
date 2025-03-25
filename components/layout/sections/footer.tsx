@@ -78,8 +78,8 @@ export const FooterSection = () => {
             </Link>
 
             <p className="my-5 max-w-[300px] text-base">
-              We turn your digital dreams into groovy realities! Are you ready
-              to jazz up your brand and rock the internet?
+              We are a dream team for the marketing success of Start-ups &
+              enterprises across the globe!
             </p>
             <div className="flex gap-4">
               <a
@@ -219,27 +219,33 @@ export const FooterSection = () => {
                 className="flex flex-row gap-2 items-center group/call"
               >
                 <div className="p-2 bg-primary/30 rounded-full group-hover/call:bg-primary/40 transition duration-500">
-                  <Phone className="h-4 w-4"/>
+                  <Phone className="h-4 w-4" />
                 </div>
-                <span className="text-primary-foreground group-hover/call:text-primary transition duration-500">+91 6297654712</span>
+                <span className="text-primary-foreground group-hover/call:text-primary transition duration-500">
+                  +91 6297654712
+                </span>
               </a>
               <a
                 href="mailto:mypromofficial@gmail.com"
                 className="flex flex-row gap-2  items-center group/mail"
               >
                 <div className="p-2 bg-primary/30 rounded-full group-hover/mail:bg-primary/40 transition duration-500">
-                  <Mail className="h-4 w-4"/>
+                  <Mail className="h-4 w-4" />
                 </div>
-                <span className="text-primary-foreground group-hover/mail:text-primary transition duration-500">mypromofficial@gmail.com</span>
+                <span className="text-primary-foreground group-hover/mail:text-primary transition duration-500">
+                  mypromofficial@gmail.com
+                </span>
               </a>
               <a
                 href="mailto:mypromofficial@gmail.com"
                 className="flex flex-row gap-2  items-center group/hour"
               >
                 <div className="p-2 bg-primary/30 rounded-full group-hour/footer:bg-primary/40 transition duration-500">
-                  <CalendarClock className="h-4 w-4"/>
+                  <CalendarClock className="h-4 w-4" />
                 </div>
-                <span className="text-primary-foreground group-hover/hour:text-primary transition duration-500">24x7 available</span>
+                <span className="text-primary-foreground group-hover/hour:text-primary transition duration-500">
+                  24x7 available
+                </span>
               </a>
             </div>
           </div>
