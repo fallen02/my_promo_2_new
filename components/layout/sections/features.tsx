@@ -10,7 +10,7 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
+    icon: "Goal",
     title: "Our Principle",
     description:
       "In the world of competition and capitalism we hold hands of the start-up owners & respect what they do; we make plan for their success.",
@@ -22,7 +22,7 @@ const featureList: FeaturesProps[] = [
       "Marketing & technology are the ultimate process to grow a business. And we can reveal the best of it to you.",
   },
   {
-    icon: "Goal",
+    icon: "PackageCheck",
     title: "Delightful Deliveries",
     description:
       "It's a proud moment for us when a client get so delighted with our work deliveries. Because we always ensure 360° client satisfaction.",

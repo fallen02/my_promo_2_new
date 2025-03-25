@@ -15,7 +15,7 @@ const benefitList: BenefitsProps[] = [
     description: "Out-of-the-box ideas that get noticed.",
   },
   {
-    icon: "Activity",
+    icon: "MonitorCog",
     title: "Well-planned Execution",
     description: "We transform ideas into realities through well planned execution.",
   },
@@ -25,7 +25,7 @@ const benefitList: BenefitsProps[] = [
     description: "We always stay ahead of the curve.",
   },
   {
-    icon: "Sparkle",
+    icon: "BicepsFlexed",
     title: "Our Source or Strength",
     description: "When work, we're not just your marketing partners, we're your biggest fans!",
   },

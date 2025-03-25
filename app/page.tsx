@@ -10,7 +10,7 @@ import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { Marquee } from "@/components/special/marque";
 import Image from "next/image";
 
-import quoteImage from '@/app/assets/quote.avif'
+import More from "@/app/assets/more.svg";
 
 interface ServiceProps {
   name: string;
@@ -109,22 +109,27 @@ export default function Home() {
       <BenefitsSection />
       <FeaturesSection />
       <ServiceSection />
+      <section className="pt-15 lg:pt-28 mx-auto max-w-[90%] flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center gap-6">
+        <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-sm font-medium text-primary tracking-wider mb-5">Whats More</h2>
+          <Image alt="Whats More" src={More} />
+        </div>
+      </section>
 
       <section className="pt-15 lg:pt-28 mx-auto max-w-[90%] flex justify-center items-center">
-        
         <div className="flex flex-col items-center justify-center">
-          <p className="text-3xl lg:text-5xl w-full font-satisfy font-bold mb-6">“The best marketing doesn’t feel like marketing.” </p>
-          <p className="text-end w-full text-[15px] lg:text-xl font-semibold text-primary/70" >-Tom Fishburne, founder and CEO, Marketoonist</p>
-
+          <p className="text-3xl lg:text-5xl w-full font-satisfy font-bold mb-6">
+            “The best marketing doesn’t feel like marketing.”{" "}
+          </p>
+          <p className="text-end w-full text-[15px] lg:text-xl font-semibold text-primary/70">
+            -Tom Fishburne, founder and CEO, Marketoonist
+          </p>
         </div>
-
       </section>
 
       <TestimonialSection />
       <TeamSection />
       <CommunitySection />
-
-      
 
       <ContactSection />
     </main>
