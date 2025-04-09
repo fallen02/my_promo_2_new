@@ -4,11 +4,11 @@ import { Poppins, Satisfy } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 import { FooterSection } from "@/components/layout/sections/footer";
-import { FooterNew } from "@/components/layout/sections/footer_new";
+
 import { Toaster } from "@/components/ui/toaster";
 import { FloatingButton } from "@/components/FloatingButton";
+import { Toaster as HotToast } from "react-hot-toast";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -54,8 +54,9 @@ export default function RootLayout({
           <Navbar />
           {children}
           <FooterSection />
-          <Toaster />
           <FloatingButton />
+          <HotToast position="top-right" reverseOrder={false} />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

@@ -101,8 +101,12 @@ module.exports = {
           }
         },
         "marquee-left": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+          from: { 
+            transform: "translateX(0)" 
+          },
+          to: { 
+            transform: "translateX(calc(-100% - var(--gap)))" 
+          },
         },
         "marquee-up": {
           from: { transform: "translateY(0)" },

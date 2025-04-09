@@ -26,7 +26,7 @@ const benefitList: BenefitsProps[] = [
   },
   {
     icon: "BicepsFlexed",
-    title: "Our Source or Strength",
+    title: "Our Source of Strength",
     description: "When work, we're not just your marketing partners, we're your biggest fans!",
   },
 ];

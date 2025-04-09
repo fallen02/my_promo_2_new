@@ -86,7 +86,7 @@ export default function Home() {
     <main className="isolate">
       <HeroSection />
 
-      <section id="sponsors" className="max-w-[90%] mx-auto pb-10 sm:pb-32">
+      <section  className="max-w-[90%] mx-auto pb-10 sm:pb-32">
         <div className="mx-auto">
           <Marquee
             className="gap-[6rem] [--duration:25s] bg-orange-950 p-8"
@@ -112,11 +112,19 @@ export default function Home() {
       <ServiceSection />
       <section className="pt-15 lg:pt-28 mx-auto max-w-[90%] flex justify-center items-center">
         <div className="flex flex-col justify-center items-center gap-6">
+          <div className="flex flex-col justify-center items-center">
           <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-lg font-medium text-primary tracking-wider mb-5">
             What More..
           </h2>
-          <Link href={'https://forms.gle/tDaU2cwSwQ2JXzSD7'} target="_blank">
-          <Image alt="Whats More" src={More} />
+          <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+          Let’s Learn & Grow Your Buisness
+          </h2>
+          <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
+          Amazing opportunity for the small business owner to learn digital marketing from the experts and grow the business by his own
+          </h3>
+          </div>
+          <Link href={"https://forms.gle/tDaU2cwSwQ2JXzSD7"} target="_blank">
+            <Image alt="Whats More" src={More} />
           </Link>
         </div>
       </section>
@@ -135,7 +143,6 @@ export default function Home() {
       <TestimonialSection />
       <TeamSection />
       <CommunitySection />
-
       <ContactSection />
     </main>
   );

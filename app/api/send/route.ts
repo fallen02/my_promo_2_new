@@ -1,6 +1,5 @@
 import { AdminEmailTemp } from "@/components/email-template/admin-back-email";
 import { NextRequest, NextResponse } from "next/server";
-// import { env } from 'process';
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -14,8 +13,7 @@ interface AdminEmailTempProps {
 }
 
 export async function POST(req: NextRequest, res: NextResponse) {
-  // const body = await req.body.json();
-  // console.log(body);
+
   const body: AdminEmailTempProps = await req.json();
   try {
     const { data, error } = await resend.emails.send({

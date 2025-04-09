@@ -17,8 +17,13 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: 'assets.aceternity.com'
-      }
+        hostname: 'cdn.sanity.io'
+      },
+      {
+        protocol: "https",
+        hostname: 'img.freepik.com'
+      },
+      
     ],
   },
 };

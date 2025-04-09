@@ -81,17 +81,19 @@ const reviewList: ReviewProps[] = [
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.9,
-  },{
+  },
+  {
     image: "https://github.com/shadcn.png",
     name: "Puneet Kochar",
     userName: "Puneet Kochar",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.9,
-  },{
+  },
+  {
     image: "https://github.com/shadcn.png",
     name: "Sanjeev Sardana",
-    userName: "Founder, Shreejee Traveling",
+    userName: "Founder, Shreejee Travellines",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.9,
@@ -107,7 +109,7 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+        Know What Our Lovely Clients Say About Us
         </h2>
       </div>
 
@@ -115,7 +117,6 @@ export const TestimonialSection = () => {
         opts={{
           align: "start",
         }}
-        
         className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
       >
         <CarouselContent>

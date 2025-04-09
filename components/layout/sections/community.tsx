@@ -1,4 +1,3 @@
-import DiscordIcon from "@/components/icons/discord-icon";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -27,14 +26,13 @@ export const CommunitySection = () => {
                 
                 />
                 <div>
-                  Ready for Unlock
-                  <span className=" pl-2 text-primary">Digital Community?</span>
+                Ready to Unlock 
+                  <span className=" pl-2 text-primary">Your Business Success?</span>
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Unlock the power of digital marketing and reach over 5.07 billion
-              people across the globe. 🚀
+            Trust the power of digital marketing and reach over 5.07 billion people globally. 🚀
             </CardContent>
 
             <CardFooter>

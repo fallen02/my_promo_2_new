@@ -158,7 +158,7 @@ export const FooterSection = () => {
               Quick Links
             </h3>
             <div>
-              <Link href="" className="opacity-60 hover:opacity-100">
+              <Link href="/" className="opacity-60 hover:opacity-100">
                 Home
               </Link>
             </div>
@@ -170,8 +170,13 @@ export const FooterSection = () => {
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="/contact-us" className="opacity-60 hover:opacity-100">
                 Contact Us
+              </Link>
+            </div>
+            <div>
+              <Link href="/payment" className="opacity-60 hover:opacity-100">
+                Payment
               </Link>
             </div>
           </div>

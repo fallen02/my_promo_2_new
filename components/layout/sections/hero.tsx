@@ -1,24 +1,14 @@
 "use client";
 import { BackgroundBeams } from "@/components/ui/background-beam";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { ArrowRight } from "lucide-react";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
-import banner from "@/app/assets/banner-dark.png";
-
 export const HeroSection = () => {
-  // const { theme } = useTheme();
   return (
     <div className="container max-w-[90%] px-0 lg:px-20 flex flex-row md:flex-row gap-20 my-[100px] md:my-[160px]">
       <div className="w-full lg:max-w-full text-center md:text-start z-10">
-        <span className="px-3 py-1.5 rounded-full bg-card text-sm font-medium">
-          🌟 Certified Digital Marketing Professional
-        </span>
         <h4 className="mb-6 text-4xl lg:text-7xl mt-[30px] font-bold">
           Hey <span className="text-primary">Start-Up Heroes</span>
         </h4>
@@ -36,10 +26,20 @@ export const HeroSection = () => {
               as="button"
               className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
             >
-              {/* <AceternityLogo /> */}
               <span className="hover:text-primary">Contact Us Now </span>
             </HoverBorderGradient>
           </Link>
+        </div>
+        <div className="pl-3 mt-5 flex gap-5">
+          <div className="flex flex-col gap-5 bg-accent/30 p-5 rounded-xl backdrop-blur-xl">
+            <p className="text-3xl font-cursive text-orange-600 font-semibold">Certified</p>
+            <p>Digital Marketing & IT Professionals*</p>
+          </div>
+          <div className="flex flex-col gap-5 bg-accent/30 p-5 rounded-xl backdrop-blur-xl">
+            <p className="text-3xl font-cursive text-orange-600 font-semibold">5+ years</p>
+            <p> of Industry Experience</p>
+          </div>
+          
         </div>
       </div>
 

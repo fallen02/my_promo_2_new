@@ -1,15 +1,7 @@
 "use client";
-import ModalVideo from "react-modal-video";
-import { useState } from "react";
 import Player from "next-video/player";
-
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
-import image from "@/app/assets/banner-dark.png";
-// import { Image } from '@radix-ui/react-avatar';
-// import CircleProgress from "@/components/circle-progress";
-// import ThemeBasedImage from "@/components/theme-based-image";
 
 export const Salutation = () => {
   return (
@@ -86,7 +78,7 @@ export const Salutation = () => {
         </div>
 
         <div>
-          <Button className="py-3 px-6">Get Started</Button>
+          <Button className="py-3 px-6" asChild><a href="/contact-us">Get Started</a></Button>
         </div>
       </div>
 

@@ -1,116 +1,58 @@
-import GithubIcon from "@/components/icons/github-icon";
-import LinkedInIcon from "@/components/icons/linkedin-icon";
-import XIcon from "@/components/icons/x-icon";
+
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from "@/components/ui/card";
 import Image from "next/image";
-import Link from "next/link";
+import abhijit from '@/app/assets/AbhijitMishra.jpg'
+import jayashree from '@/app/assets/jayashridas.jpg'
+import bhabani from '@/app/assets/bhabaninandi.svg'
+import UserPlace from '@/app/assets/User.jpg'
+
 interface TeamProps {
-  imageUrl: string;
+  imageUrl: any;
   firstName: string;
   lastName: string;
   positions: string[];
-  socialNetworks: SocialNetworkProps[];
+  
 }
-interface SocialNetworkProps {
-  name: string;
-  url: string;
-}
+
 export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl:jayashree,
       firstName: "Jayashri",
       lastName: "Das",
       positions: ["Founder", "Digital Marketing Manager"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
-        },
-      ],
+      
     },
     {
-      imageUrl: "https://i.pravatar.cc/250?img=58",
+      imageUrl: abhijit,
       firstName: "Abhijit",
       lastName: "Mishra",
       positions: ["Salesforce Developer"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
-        },
-      ],
+      
     },
     
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: bhabani,
       firstName: "Bhabani",
       lastName: "Nandi",
       positions: ["Social Media Manager"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-      ],
+      
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: UserPlace,
       firstName: "Subhankar",
       lastName: "",
       positions: ["Website & Mobile App Developer", "UI/UX Designer"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
-        },
-      ],
+      
     },
     
   ];
-  const socialIcon = (socialName: string) => {
-    switch (socialName) {
-      case "LinkedIn":
-        return <LinkedInIcon />;
-      case "Github":
-        return <GithubIcon />;
-      case "X":
-        return <XIcon />;
-    }
-  };
+
 
   return (
     <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
@@ -118,16 +60,15 @@ export const TeamSection = () => {
         <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-sm font-medium text-primary tracking-wider mb-5">
           Team
         </h2>
-
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-          The Company Dream Team
+        Meet Our Core Team Members
         </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {teamList.map(
           (
-            { imageUrl, firstName, lastName, positions, socialNetworks },
+            { imageUrl, firstName, lastName, positions },
             index
           ) => (
             <Card
