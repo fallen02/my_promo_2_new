@@ -27,7 +27,7 @@ export function Graphics() {
 
   return (
     <div className=" flex flex-col gap-10">
-      <p className="text-base bg-orange-600/20 w-fit px-3 py-1 rounded-full">Company Logo</p>
+      <p className="text-base bg-orange-600/20 w-fit px-3 py-1 rounded-full">Graphics</p>
       {posts ? (
         <PhotoProvider>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">

@@ -8,7 +8,6 @@ import {
 
 import Image from "next/image";
 
-
 interface dataProps {
   title: string;
   overview: string;
@@ -73,12 +72,18 @@ export const PortfolioHighlight = ({
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="flex flex-col gap-3">
-                    {data.challenges.map((challenge, index) => (
-                      <p key={index} className="flex flex-row gap-4">
-                        <span>{index + 1}</span>
-                        {challenge}
-                      </p>
-                    ))}
+                    {data.challenges.length > 1 ? (
+                      <>
+                        {data.challenges.map((challenge, index) => (
+                          <p key={index} className="flex flex-row gap-4">
+                            <span>{index + 1}</span>
+                            {challenge}
+                          </p>
+                        ))}
+                      </>
+                    ) : (
+                      <p>{data.challenges[0]}</p>
+                    )}
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -91,12 +96,18 @@ export const PortfolioHighlight = ({
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="flex flex-col gap-3">
-                    {data.solutions.map((solution, index) => (
-                      <p key={index} className="flex flex-row gap-4">
-                        <span>{index + 1}</span>
-                        {solution}
-                      </p>
-                    ))}
+                    {data.solutions.length > 1 ? (
+                      <>
+                        {data.solutions.map((solution, index) => (
+                          <p key={index} className="flex flex-row gap-4">
+                            <span>{index + 1}</span>
+                            {solution}
+                          </p>
+                        ))}
+                      </>
+                    ) : (
+                      <p>{data.solutions[0]}</p>
+                    )}
                   </div>
                 </AccordionContent>
               </AccordionItem>

@@ -2,6 +2,7 @@ import { SocialMedia } from "./partial/SocialMedia";
 import { Website } from "./partial/Website";
 import { Logo } from "./partial/Logo";
 import { Graphics } from "./partial/Graphics";
+import { Videos } from "./partial/Videos";
 
 export function Projects() {
   return (
@@ -21,6 +22,7 @@ export function Projects() {
           <SocialMedia />
           <Logo />
           <Graphics />
+          <Videos />
         </div>
       </div>
     </section>

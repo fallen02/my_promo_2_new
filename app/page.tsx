@@ -9,9 +9,10 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { Marquee } from "@/components/special/marque";
 import Image from "next/image";
+import Link from "next/link";
 
 import More from "@/app/assets/more.svg";
-import Link from "next/link";
+import More2 from "@/app/assets/more2.svg";
 
 interface ServiceProps {
   name: string;
@@ -123,8 +124,11 @@ export default function Home() {
           Amazing opportunity for the small business owner to learn digital marketing from the experts and grow the business by his own
           </h3>
           </div>
-          <Link href={"https://forms.gle/tDaU2cwSwQ2JXzSD7"} target="_blank">
-            <Image alt="Whats More" src={More} />
+          <Link href={"https://forms.gle/tDaU2cwSwQ2JXzSD7"} target="_blank" className="hidden lg:flex ">
+            <Image alt="Whats More" src={More} className="rounded-sm"/>
+          </Link>
+          <Link href={"https://forms.gle/tDaU2cwSwQ2JXzSD7"} target="_blank" className="flex lg:hidden">
+            <Image alt="Whats More" src={More2} className="rounded-sm"/>
           </Link>
         </div>
       </section>

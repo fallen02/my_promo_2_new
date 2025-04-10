@@ -15,10 +15,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import user from '@/app/assets/blue-circle-with-white-user.png'
+import { StaticImageData } from "next/image";
 
 interface ReviewProps {
-  image: string;
+  image: StaticImageData;
   name: string;
+  caption: string
   userName: string;
   comment: string;
   rating: number;
@@ -26,76 +29,60 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
+    image: user,
     name: "Debasish Das",
+    caption: "DD",
     userName: "Founder, Cluster Engineers",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "Absolutely the best website development company at this affordable price range! The quality, speed, and support are as I expected. I Loved working with them. Highly recommended!",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: user,
     name: "Rudra Narayan Mishra",
+    caption: "RM",
     userName: "Director, Assigna Solution",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "Working with MyPromo has been a game-changer for our business. Their team is professional, knowledgeable, and truly understands how to drive results. Since partnering with them, we’ve seen a significant growth to our social media channels. They developed a stunning website for us at a very affordable cost. Overall I’m so much satisfied with MyPromo.",
     rating: 4.8,
   },
 
   {
-    image: "https://github.com/shadcn.png",
-    name: "Rahul Bharat",
-    userName: "Founder, Geniuslane",
+    image: user,
+    name: "Pradip Maity",
+    caption: "PM",
+    userName: "JK Consulting Services",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "I have found gem in Kolkata. MyPromo does the same they assure. 5 on 5 for them.",
     rating: 4.9,
   },
+  
   {
-    image: "https://github.com/shadcn.png",
-    name: "Deepak Dodani",
-    userName: "Founder, Meat99",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
+    image: user,
     name: "Sk Samim",
+    caption: "SS",
     userName: "Franchise Owner, Jio Mart Digital",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "The team is really good. I am satisfied with the social media and lead generation services.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: user,
     name: "Sk Rejabul",
+    caption: "SR",
     userName: "Franchise Owner, Dr Fixit",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The best social media agency I have ever met. The best part is I have directly in contact with the founder and she supported a lot to grow my business in Purba Medinipur.",
     rating: 4.9,
   },
+ 
   {
-    image: "https://github.com/shadcn.png",
-    name: "Mowlana",
-    userName: "Director, AG Constructions",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Puneet Kochar",
-    userName: "Puneet Kochar",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
+    image: user,
     name: "Sanjeev Sardana",
+    caption: "SS",
     userName: "Founder, Shreejee Travellines",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Good service in affordable price. They have a really caring nature.",
     rating: 4.9,
   },
 ];
@@ -109,7 +96,7 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Know What Our Lovely Clients Say About Us
+        Know what our lovely clients say about us
         </h2>
       </div>
 
@@ -140,15 +127,11 @@ export const TestimonialSection = () => {
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
-                      <AvatarFallback>SV</AvatarFallback>
+                      <AvatarFallback className="text-xl font-semibold bg-orange-600/10">{review.caption}</AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">
-                      <CardTitle className="text-lg">{review.name}</CardTitle>
+                      <CardTitle className="text-lg text-orange-700">{review.name}</CardTitle>
                       <CardDescription>{review.userName}</CardDescription>
                     </div>
                   </div>
