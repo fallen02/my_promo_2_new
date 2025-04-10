@@ -259,8 +259,9 @@ export default function PortfolioPage() {
         </div>
       </section>
       <Projects />
-      <TestimonialSection />
       <Feature />
+
+      <TestimonialSection />
 
       <CTASection
         title={CTADATA.title}
@@ -271,76 +272,6 @@ export default function PortfolioPage() {
   );
 }
 
-// const TestimonialSection = () => {
-//   return (
-//     <section id="testimonials" className="container py-24 sm:py-32">
-//       <div className="text-center flex justify-center items-center flex-col mb-8">
-//         <h2 className="bg-card px-3 w-fit rounded-full py-1.5 text-sm font-medium text-primary tracking-wider mb-5">
-//           Testimonials
-//         </h2>
-
-//         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-//           Client Success Stories
-//         </h2>
-//       </div>
-
-//       <Carousel
-//         opts={{
-//           align: "center",
-//         }}
-//         className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
-//       >
-//         <CarouselContent>
-//           {reviewList.map((review) => (
-//             <CarouselItem
-//               key={review.name}
-//               className="md:basis-1/2 lg:basis-1/3"
-//             >
-//               <Card className="bg-muted/50 dark:bg-card">
-//                 <CardContent className="pt-6 pb-0">
-//                   <div className="flex gap-1 pb-6">
-//                     <Star className="size-4 fill-primary text-primary" />
-//                     <Star className="size-4 fill-primary text-primary" />
-//                     <Star className="size-4 fill-primary text-primary" />
-//                     <Star className="size-4 fill-primary text-primary" />
-//                     <Star className="size-4 fill-primary text-primary" />
-//                   </div>
-//                   {`"${review.comment}"`}
-//                 </CardContent>
-
-//                 <CardHeader>
-//                   <div className="flex flex-row items-center gap-4">
-//                     <Avatar>
-//                       <AvatarImage
-//                         src="https://avatars.githubusercontent.com/u/75042455?v=4"
-//                         alt="radix"
-//                       />
-//                       <AvatarFallback>SV</AvatarFallback>
-//                     </Avatar>
-
-//                     <div className="flex flex-col">
-//                       <CardTitle className="text-lg">{review.name}</CardTitle>
-//                       <CardDescription>{review.userName}</CardDescription>
-//                     </div>
-//                   </div>
-//                 </CardHeader>
-//               </Card>
-//             </CarouselItem>
-//           ))}
-//         </CarouselContent>
-//         <CarouselPrevious />
-//         <CarouselNext />
-//       </Carousel>
-//     </section>
-//   );
-// };
-
-interface Feature {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-}
 
 
 
@@ -361,7 +292,8 @@ const Feature = ({
   ],
 }) => {
   return (
-    <section className="max-w-[90%] mx-auto py-10">
+    <section className="max-w-[90%] mx-auto py-5 lg:py-10">
+      <h1 className="text-center pb-10 text-2xl lg:text-4xl">Industries We Serve</h1>
       <div className="mx-auto">
         <Marquee
           className="gap-[3rem] [--duration:25s] bg-orange-950 p-8 "
