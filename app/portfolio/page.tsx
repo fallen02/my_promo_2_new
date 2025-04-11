@@ -278,38 +278,24 @@ export default function PortfolioPage() {
 const Feature = ({
   features = [
     "Franchise",
-    "*",
     "Education",
-    "*",
     "Healthcare",
-    "*",
     "E-commerce",
-    "*",
     "Hotel & Restaurant",
-    "*",
     "Agency & Consultation",
-    "*",
   ],
 }) => {
   return (
     <section className="max-w-[90%] mx-auto py-5 lg:py-10">
       <h1 className="text-center pb-10 text-2xl lg:text-4xl">Industries We Serve</h1>
-      <div className="mx-auto">
-        <Marquee
-          className="gap-[3rem] [--duration:25s] bg-orange-950 p-8 "
-          fade
-          innerClassName="gap-[3rem] "
-          // pauseOnHover
-        >
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="flex items-center text-2xl md:text-4xl font-bold text-white"
-            >
-              {feature}
+      <div className="mx-auto grid grid-cols-2  lg:grid-cols-3 gap-5 ">
+        {
+          features.map((feature, index ) => (
+            <div key={index}  className="flex justify-center items-center p-5 lg:p-10 bg-accent/30 rounded-xl shadow-xl">
+              <p className="text-xl lg:text-2xl font-semibold text-orange-600">{feature}</p>
             </div>
-          ))}
-        </Marquee>
+          ))
+        }
       </div>
     </section>
   );
