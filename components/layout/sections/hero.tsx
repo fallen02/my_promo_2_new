@@ -32,11 +32,11 @@ export const HeroSection = () => {
         </div>
         <div className="pl-3 mt-5 flex gap-5">
           <div className="flex flex-col gap-5 bg-accent/30 p-5 rounded-xl backdrop-blur-xl">
-            <p className="text-3xl font-cursive text-orange-600 font-semibold">Certified</p>
+            <p className="text-3xl font-openSans text-orange-600 font-semibold">Certified</p>
             <p>Digital Marketing & IT Professionals*</p>
           </div>
           <div className="flex flex-col gap-5 bg-accent/30 p-5 rounded-xl backdrop-blur-xl">
-            <p className="text-3xl font-cursive text-orange-600 font-semibold">5+ years</p>
+            <p className="text-3xl font-openSans text-orange-600 font-semibold">5+ years</p>
             <p> of Industry Experience</p>
           </div>
           

@@ -2,8 +2,8 @@ import { Separator } from "@/components/ui/separator";
 import { Phone, Mail, CalendarClock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
 import Logo from "@/app/logo.png";
+import { Button } from "@/components/ui/button";
 
 const Services: { title: string; href: string; description: string }[] = [
   {
@@ -150,6 +150,13 @@ export const FooterSection = () => {
                   <path d="m10 15 5-3-5-3z" />
                 </svg>
               </a>
+            </div>
+            <div className="mt-5">
+              <Button asChild className="rounded-full px-10 py-5 bg-orange-900">
+                <Link href={"/payment"} >
+                Pay Now
+                </Link>
+              </Button>
             </div>
           </div>
 

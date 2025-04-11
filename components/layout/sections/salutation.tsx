@@ -14,7 +14,7 @@ export const Salutation = () => {
           Welcome to MyPromo
         </h4>
         <h4 className="text-xl lg:text-2xl font-bold mt-2">To Get You High!</h4>
-        <p className="text-sm lg:text-lg text-muted-foreground mt-5">
+        <p className="text-sm lg:text-lg text-center lg:text-left text-muted-foreground mt-5">
           We turn your digital dreams into groovy realities! Are you ready to
           jazz up your brand and rock the internet? You&apos;ve landed at the right
           place. We blend creativity, strategy, team effort and a whole lot of

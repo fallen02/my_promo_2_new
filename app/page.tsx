@@ -10,7 +10,6 @@ import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { Marquee } from "@/components/special/marque";
 import Image from "next/image";
 import Link from "next/link";
-
 import More from "@/app/assets/more.svg";
 import More2 from "@/app/assets/more2.svg";
 

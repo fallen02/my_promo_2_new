@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins, Satisfy } from "next/font/google";
+import { Poppins, Satisfy, Open_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
@@ -23,6 +23,14 @@ export const satisfy = Satisfy({
   variable: "--font-satisty",
 });
 
+export const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-open-sans",
+
+});
+
 export const metadata: Metadata = {
   title: "MyPromo",
   description: "To get you high on the digital world!",
@@ -42,7 +50,8 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-black antialiased",
           poppins.className,
-          satisfy.variable
+          satisfy.variable,
+          openSans.variable
         )}
       >
         <ThemeProvider

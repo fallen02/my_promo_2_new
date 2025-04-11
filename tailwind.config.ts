@@ -32,6 +32,7 @@ module.exports = {
       fontFamily: {
         
         'cursive': ['cursive', 'sans-serif'],
+        'openSans': ['var(--font-open-sans)', 'sans-serif'],
         satisfy: ['var(--font-satisty)', 'sans-serif']
       },
       colors: {
