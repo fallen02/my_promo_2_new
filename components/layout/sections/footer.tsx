@@ -181,11 +181,6 @@ export const FooterSection = () => {
                 Contact Us
               </Link>
             </div>
-            <div>
-              <Link href="/payment" className="opacity-60 hover:opacity-100">
-                Payment
-              </Link>
-            </div>
           </div>
 
           <div className="flex flex-col gap-2">
