@@ -3,6 +3,7 @@ import PageHeader from "@/components/layout/sections/page-header";
 import { PageFooter } from "@/components/layout/sections/page_footer";
 import { TextShimmer } from "@/components/ui/text-shimmer";
 import { Timeline } from "@/components/ui/timeline-effect";
+import SEOImage from '@/app/assets/services/search engine optimization.jpg'
 
 export default function Webdev() {
   const PageData = {
@@ -10,6 +11,7 @@ export default function Webdev() {
     description:
       "At MyPromo, we specialize in optimizing your online presence to enhance visibility, drive organic traffic, and improve search engine rankings. Our SEO services are designed to help your business stand out in a crowded digital landscape and attract high-quality leads.",
     subtitle: "Boost Your Online Visibility with  SEO Expert",
+    image: SEOImage
   };
   const data = [
     {
@@ -138,6 +140,7 @@ export default function Webdev() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={PageData.image}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">

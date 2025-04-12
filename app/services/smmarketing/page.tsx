@@ -2,9 +2,9 @@ import { CTASection } from "@/components/layout/sections/cta";
 import { CTAWithCard } from "@/components/layout/sections/cta-with-card";
 import PageHeader from "@/components/layout/sections/page-header";
 import { TextShimmer } from "@/components/ui/text-shimmer";
-
 import { Timeline } from "@/components/ui/timeline-effect";
 import { IconClipboardCopy, IconFileBroken, IconSignature, IconTableColumn } from "@tabler/icons-react";
+import SocialImage from '@/app/assets/services/social media marketing pictures.jpg'
 
 
 export default function SocilMediaMarketing() {
@@ -14,6 +14,7 @@ export default function SocilMediaMarketing() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={PageData.image}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">
@@ -45,6 +46,7 @@ const PageData = {
   description:
     "At MyPromo, we help businesses like yours thrive in the digital world through targeted, data-driven social media marketing strategies. Our services are designed to boost your brand's online presence, engage with your audience, and drive measurable results.",
   subtitle: "Elevate Your Brand with  Social Media Marketing Expert",
+  image: SocialImage
 };
 const data = [
   {

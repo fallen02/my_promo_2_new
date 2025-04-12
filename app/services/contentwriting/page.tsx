@@ -10,6 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import ContentImage from '@/app/assets/services/content writing.jpg'
 
 export default function ContentWriting() {
   return (
@@ -18,6 +19,7 @@ export default function ContentWriting() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={ContentImage}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">

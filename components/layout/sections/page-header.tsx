@@ -5,15 +5,19 @@ export default function PageHeader({
   title,
   subtitle,
   description,
+  image,
 }: {
   title: string;
   subtitle: string;
   description: string;
-
+  image: any;
 }) {
   return (
-    <div className="relative isolate overflow-hidden  py-24 sm:py-40  dark:bg-grid-white/[0.08] bg-grid-black/[0.2] ">
-      <div aria-hidden="true"  className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] z-0"></div>
+    <div className="relative isolate overflow-hidden  py-24 sm:py-40  dark:bg-grid-white/[0.08] bg-grid-black/[0.2] z-0">
+      <div
+        aria-hidden="true"
+        className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] -z-50"
+      ></div>
       <div
         aria-hidden="true"
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -38,21 +42,39 @@ export default function PageHeader({
           className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-orange-600/40 to-primary opacity-20"
         />
       </div>
-      <div className="mx-auto max-w-full px-10 lg:px-20 z-50">
+      <div className="mx-auto max-w-full flex flex-col gap-20 px-10 lg:px-20 z-50">
         <div className="mx-auto max-w-[90%] lg:mx-0">
-          
-          <TextScramble duration={1} className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
+          <TextScramble
+            duration={1}
+            className="text-4xl font-bold tracking-tight text-primary sm:text-6xl"
+          >
             {title}
           </TextScramble>
-          
+
           <TextScramble duration={2} className="text-3xl leading-8 mt-5">
             {subtitle}
           </TextScramble>
 
-          <TextScramble as={'p'} duration={4} className="mt-3 text-lg leading-8 text-muted-foreground">
+          <TextScramble
+            as={"p"}
+            duration={4}
+            className="mt-3 text-lg leading-8 text-muted-foreground"
+          >
             {description}
-          </TextScramble >
-          
+          </TextScramble>
+        </div>
+        <div className="relative flex justify-center items-center">
+          <div className="absolute z-50 h-full w-full   bg-gradient-to-b from-transparent to-black" />
+
+          <div className=" bg-gray-600 p-2 rounded-xl">
+            <Image
+              src={image}
+              alt="Image"
+              height={800}
+              width={1000}
+              className="rounded-[calc(var(--radius)-4px)]"
+            />
+          </div>
         </div>
       </div>
     </div>

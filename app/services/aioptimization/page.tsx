@@ -10,6 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import AIimage from '@/app/assets/services/AI Enhanced Optimization.jpg'
 
 export default function MarketingAutomation() {
   return (
@@ -18,6 +19,7 @@ export default function MarketingAutomation() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={AIimage}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">

@@ -10,6 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import GraphicsImage from '@/app/assets/services/graphics design.jpg'
 
 export default function GraphicDesign() {
   return (
@@ -18,6 +19,7 @@ export default function GraphicDesign() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={GraphicsImage}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">

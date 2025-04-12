@@ -10,6 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import LeadImage from '@/app/assets/services/lead generation.jpg'
 
 export default function LeadGenaration() {
   return (
@@ -18,6 +19,7 @@ export default function LeadGenaration() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={LeadImage}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">

@@ -153,7 +153,7 @@ export const FooterSection = () => {
             </div>
             <div className="mt-5">
               <Button asChild className="rounded-full px-10 py-5 bg-orange-900">
-                <Link href={"/payment"} >
+                <Link href={"https://rzp.io/rzp/3z3o3u2I"} target="_blank" >
                 Pay Now
                 </Link>
               </Button>

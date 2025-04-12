@@ -4,6 +4,7 @@ import { PageFooter } from "@/components/layout/sections/page_footer";
 import { TextShimmer } from "@/components/ui/text-shimmer";
 
 import { Timeline } from "@/components/ui/timeline-effect";
+import webDevImage from '@/app/assets/services/website develoment picture.jpg'
 
 const CTADATA = {
   title: "Get Started",
@@ -18,6 +19,7 @@ export default function Webdev() {
     description:
       "At MyPromo we understand that your website is the digital storefront of your business. Our comprehensive website development services are designed to create an online presence that not only captures your brand’s essence but also drives engagement and conversion.",
     subtitle: "Transform Your Online Presence with Website Development Expert",
+    image: webDevImage
   };
   const data = [
     {
@@ -134,6 +136,7 @@ export default function Webdev() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={PageData.image}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">

@@ -10,6 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import ColabImage from '@/app/assets/services/marketing collab membership.jpg'
 
 export default function ContentMarketing() {
   return (
@@ -18,6 +19,7 @@ export default function ContentMarketing() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image={ColabImage}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">

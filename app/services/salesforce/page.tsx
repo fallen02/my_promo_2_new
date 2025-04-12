@@ -11,6 +11,8 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
+import SalesForceImage from '@/app/assets/services/salesforce crm.jpg'
+
 export default function Salesforce() {
   return (
     <>
@@ -18,6 +20,7 @@ export default function Salesforce() {
         title={PageData.title}
         description={PageData.description}
         subtitle={PageData.subtitle}
+        image = {SalesForceImage}
       />
       <div className="py-24">
         <div className="px-10 lg:px-20 ">
@@ -53,7 +56,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Start your Salesforce journey with confidence. We guide you through the entire implementation process, from setup to launch, ensuring a smooth transition.
+          Start your Salesforce journey with confidence. We guide you through
+          the entire implementation process, from setup to launch, ensuring a
+          smooth transition.
         </p>
       </div>
     ),
@@ -63,7 +68,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Our team customizes Salesforce to meet the unique demands of your business, building tailored solutions that improve workflow and drive efficiency.
+          Our team customizes Salesforce to meet the unique demands of your
+          business, building tailored solutions that improve workflow and drive
+          efficiency.
         </p>
       </div>
     ),
@@ -73,7 +80,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Connect Salesforce to your other business tools, such as marketing platforms, e-commerce systems, or customer service software, for a streamlined, all-in-one solution.
+          Connect Salesforce to your other business tools, such as marketing
+          platforms, e-commerce systems, or customer service software, for a
+          streamlined, all-in-one solution.
         </p>
       </div>
     ),
@@ -83,7 +92,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Moving your data into Salesforce can be a daunting task. We ensure a seamless, secure migration of your existing data into the Salesforce ecosystem with minimal disruption.
+          Moving your data into Salesforce can be a daunting task. We ensure a
+          seamless, secure migration of your existing data into the Salesforce
+          ecosystem with minimal disruption.
         </p>
       </div>
     ),
@@ -93,7 +104,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Our team provides comprehensive training for your staff, so they can get the most out of Salesforce. We also offer ongoing support to address any issues or challenges you face.
+          Our team provides comprehensive training for your staff, so they can
+          get the most out of Salesforce. We also offer ongoing support to
+          address any issues or challenges you face.
         </p>
       </div>
     ),
@@ -103,7 +116,8 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Save time and reduce human error by automating repetitive tasks, from customer follow-ups to lead management.
+          Save time and reduce human error by automating repetitive tasks, from
+          customer follow-ups to lead management.
         </p>
       </div>
     ),
@@ -113,7 +127,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Gain a 360-degree view of your customers, allowing you to make informed decisions, personalize communications, and build stronger relationships.
+          Gain a 360-degree view of your customers, allowing you to make
+          informed decisions, personalize communications, and build stronger
+          relationships.
         </p>
       </div>
     ),
@@ -123,7 +139,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Optimize your sales process with Salesforce’s powerful tools, such as lead scoring, forecasting, and pipeline management, to close deals faster and grow your revenue.
+          Optimize your sales process with Salesforce’s powerful tools, such as
+          lead scoring, forecasting, and pipeline management, to close deals
+          faster and grow your revenue.
         </p>
       </div>
     ),
@@ -133,7 +151,9 @@ const data = [
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-        Whether you&apos;re a small business or a large enterprise, Salesforce can scale with you. As your business expands, we ensure that your CRM system grows and adapts to your needs.
+          Whether you&apos;re a small business or a large enterprise, Salesforce
+          can scale with you. As your business expands, we ensure that your CRM
+          system grows and adapts to your needs.
         </p>
       </div>
     ),
