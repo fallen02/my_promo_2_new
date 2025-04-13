@@ -44,7 +44,7 @@ export function Videos() {
                   key={index}
                   className="flex flex-col gap-5 justify-between items-center"
                 >
-                  <a href={post.url ? post.url : "#"}>
+                  <a href={post.url ? post.url : "#"} target="_blank">
                     <Image
                       src={post.image.url}
                       width={400}
