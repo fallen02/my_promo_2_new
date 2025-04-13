@@ -10,7 +10,7 @@ export interface PostData {
   image: {
     url: string;
   };
-  url: string;
+  url: string | null;
 }
 export function Videos() {
   const [posts, setPostes] = useState<PostData[] | null>(null);
@@ -44,7 +44,7 @@ export function Videos() {
                   key={index}
                   className="flex flex-col gap-5 justify-between items-center"
                 >
-                  <a href={post.url}>
+                  <a href={post.url ? post.url : "#"}>
                     <Image
                       src={post.image.url}
                       width={400}
