@@ -22,7 +22,7 @@ export const HeroSection = () => {
             Get an unique business & marketing strategy designed only for you!
           </p>
           <div className="max-w-screen-md space-y-8 md:space-y-8 md:space-x-4 flex justify-center items-center lg:justify-start">
-            <Link href="/about-us">
+            <Link href="/contact-us">
               <HoverBorderGradient
                 containerClassName="rounded-full"
                 as="button"
@@ -49,12 +49,6 @@ export const HeroSection = () => {
         </div>
 
         <BackgroundBeams />
-      </div>
-      <div className="relative flex justify-center items-center mt-10">
-      <div className="absolute z-50 h-full w-full   bg-gradient-to-b from-transparent to-black"/>
-        <div className=" bg-gray-600 p-2 rounded-xl">
-        <Image src={HeroImage} alt="Hero" height={950} width={950} className="rounded-[calc(var(--radius)-4px)]"/>
-        </div>
       </div>
     </div>
   );

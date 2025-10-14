@@ -222,14 +222,14 @@ export const FooterSection = () => {
 
             <div className="flex flex-col gap-4 ">
               <a
-                href="tel:+916297654712"
+                href="tel:+918609683355"
                 className="flex flex-row gap-2 items-center group/call"
               >
                 <div className="p-2 bg-primary/30 rounded-full group-hover/call:bg-primary/40 transition duration-500">
                   <Phone className="h-4 w-4" />
                 </div>
                 <span className="text-primary-foreground group-hover/call:text-primary transition duration-500">
-                  +91 6297654712
+                  +91 8609683355
                 </span>
               </a>
               <a
