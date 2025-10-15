@@ -36,15 +36,11 @@ const services: ServiceProps[] = [
   {
     name: "Marketing Automation",
   },
-  {
-    name: "AI Enhanced Optimization",
-  },
+
   {
     name: "Content Writing",
   },
-  {
-    name: "Content Marketing",
-  },
+
   {
     name: "Collab Membership",
   },
