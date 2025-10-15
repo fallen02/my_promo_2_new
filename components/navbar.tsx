@@ -64,22 +64,13 @@ const Services: { title: string; href: string; description: string }[] = [
     description:
       "Streamline Your Marketing with Advanced Automation Solutions.",
   },
-  {
-    title: "AI Enhanced Digital Optimization",
-    href: "/services/aioptimization",
-    description:
-      "Unlock Superior Performance with AI-Enhanced Digital Optimization.",
-  },
+
   {
     title: "Content Writing",
     href: "/services/contentwriting",
     description: "Elevate Your Brand with Professional Content Writing.",
   },
-  {
-    title: "Content Marketing ",
-    href: "/services/contentmarketing",
-    description: "Drive Engagement and Growth with Expert Content Marketing.",
-  },
+
   {
     title: "Collab Membership",
     href: "/services/collab",

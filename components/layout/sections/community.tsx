@@ -11,11 +11,11 @@ import image2 from "@/app/assets/underneath - Ready to unlock your success.jpg";
 
 export const CommunitySection = () => {
   return (
-    <section id="community" className="py-12 ">
+    <section id="community" className="py-12">
       <hr className="border-secondary" />
       <div className="flex flex-col lg:flex-row items-center justify-center">
-        <div className="container py-20 sm:py-20">
-          <div className="flex flex-col gap-5">
+        <div className="container py-20 sm:py-20 ">
+          <div className="flex flex-col gap-5 pl-20">
             <Image
               src={"/logo.png"}
               alt="logo"

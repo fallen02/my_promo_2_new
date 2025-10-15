@@ -60,25 +60,14 @@ export function ServiceSection() {
       icon: <IconAutomation />,
       link: "/services/marketingautomation",
     },
-    {
-      title: "AI Enhanced Digital Optimization",
-      description:
-        "Let’s join our AI-powered growth & optimization and Supercharge Your Digital Presence.",
-      icon: <IconAdjustmentsBolt />,
-      link: "/services/aioptimization",
-    },
+    
     {
       title: "Content Writing",
       description: "IEngaging & SEO-friendly content writing service is one tap away.",
       icon: <IconEdit />,
       link: "/services/contentwriting",
     },
-    {
-      title: "Content Marketing",
-      description: "Attract, inform, and inspire your customers to drive more sales.",
-      icon: <IconActivity />,
-      link: "/services/contentmarketing",
-    },
+
     {
       title: "Collab Membership",
       description: "Join Us and collaborate with Facebook groups and Influencers to elevate your branding journey.",
