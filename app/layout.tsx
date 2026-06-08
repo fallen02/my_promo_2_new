@@ -9,6 +9,7 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { Toaster } from "@/components/ui/toaster";
 import { FloatingButton } from "@/components/FloatingButton";
 import { Toaster as HotToast } from "react-hot-toast";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -31,10 +32,30 @@ export const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "MyPromo",
-  description: "To get you high on the digital world!",
+  title: {
+    default: "MyPromo | Digital Marketing Agency in Kolkata",
+    template: "%s | MyPromo",
+  },
+  description:
+    "MyPromo offers SEO, website development, social media marketing, lead generation, Google Business Profile optimization, and Salesforce consulting services in Kolkata.",
+  keywords: [
+    "Digital Marketing Agency in Kolkata",
+    "SEO Company in Kolkata",
+    "Website Development Company in Kolkata",
+    "Social Media Marketing Agency Kolkata",
+    "Lead Generation Services India",
+    "Salesforce Consultant India",
+  ],
   icons: {
     icon: "/favicon.png",
+  },
+  openGraph: {
+    title: "MyPromo | Digital Marketing Agency in Kolkata",
+    description:
+      "SEO, website development, social media marketing, lead generation and Salesforce consulting services.",
+    url: "https://mypromo.in",
+    siteName: "MyPromo",
+    type: "website",
   },
 };
 
@@ -53,6 +74,7 @@ export default function RootLayout({
           openSans.variable
         )}
       >
+        <LocalBusinessSchema />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
